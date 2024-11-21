@@ -5,7 +5,9 @@ Analyzing Food Image Data using a Convolutional Neural Network (CNN) for 101 Foo
 
 ## Description
 
-This project aims to classify food images into categories using a Convolutional Neural Network (CNN). Specifically, we will use 101 food categories with transfer learning for our CNN architecture to ensure we predict the correct food category regardless of varying lighting and complex backgrounds. The process involves handling multiple h5 files containing food image data, evaluating the model's performance with different image resolutions, and comparing the impact of image quality on the accuracy of food classification.## Section 1: Software and platform
+This project aims to classify food images into categories using a Convolutional Neural Network (CNN). Specifically, we will use 101 food categories with transfer learning for our CNN architecture to ensure we predict the correct food category regardless of varying lighting and complex backgrounds. The process involves handling multiple h5 files containing food image data, evaluating the model's performance with different image resolutions, and comparing the impact of image quality on the accuracy of food classification.
+
+## Section 1: Software and platform
 
 ### Types of software used for the project
 
