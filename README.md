@@ -14,8 +14,10 @@ This project aims to classify food images into categories using a Convolutional 
 * Packages that should be installed in Python:
   * Numpy
   * Pandas
-  * VAR
-  * adfuller
+  * Matplotlib
+  * Tensorflow
+  * h5py
+  * Scikit-learn
   
 * Platform: Windows 10, MacOS
 
@@ -23,13 +25,14 @@ This project aims to classify food images into categories using a Convolutional 
 
 * Files (Outline)
   * DATA - Folder
-    * cleaned_data
-    * original_data
-    * DataAppendix.pdf
+    * Data Appendix.pdf
+    * food.csv
   * OUTPUT - Folder
+    * ConfusionMatrix32x32.png
+    * ConfusionMatrix64x64.png
+    * ConfusionMatrix384x384.png
   * SCRIPTS - Folder
-    * modeling.ipynb
-    * preprocessing.ipynb
+    * preprocessing+modeling.ipynb
   * LICENSE.md
   * README.md
 
@@ -37,12 +40,13 @@ This project aims to classify food images into categories using a Convolutional 
 
 * preprocessing.ipynb
   * Import software packages (pandas, matplotlib, numpy) into python notebook
-  * Define and return all time series data from data folder as data frames
-  * Load all time series data from data folder in Google Drive
-  * Generate time series data and reword columns based on your name preference
-  * Combine data into several possibly useful frames and rename columns
-  * Combine CPI and Inflation DataFrames; Merge Real Estate Loan Data; Merge Real Estate Price Data; Merge Mortgage Data
-  * Save cleaned data as a csv file in Google Drive
+  * Specify the path to your ZIP file
+  * Specify the directory where you want to extract the contents
+  * Check the contents of the extracted folder
+  * Walk through the directory and print the full paths of the files
+  * !pip install h5py
+  * Load and process h5 files
+  * Preprocess data
   
 * modeling.ipynb
   * Import software packages (pandas, matplotlib, matplotlib.dates, numpy) into python notebook
@@ -78,10 +82,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
-* https://fred.stlouisfed.org/series/CORESTICKM159SFRBATL
-* https://fred.stlouisfed.org/searchresults/?st=inflation&isTst=1
-* https://fred.stlouisfed.org/series/MORTGAGE30US
-* https://fred.stlouisfed.org/series/CREACBW027SBOG
-* https://fred.stlouisfed.org/series/COMREPUSQ159N
+* https://world.openfoodfacts.org/data
+* food.csv
 
 
