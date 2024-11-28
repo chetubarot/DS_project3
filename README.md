@@ -38,8 +38,9 @@ This project aims to classify food images into categories using a Convolutional 
 
 ## Section 3: Instructions for reproducing our results
 
-* preprocessing.ipynb
+* preprocessing
   * Import software packages (pandas, matplotlib, numpy) into python notebook
+  * Import h5py, os, and packages from tensorflow
   * Specify the path to your ZIP file
   * Specify the directory where you want to extract the contents
   * Check the contents of the extracted folder
@@ -48,23 +49,16 @@ This project aims to classify food images into categories using a Convolutional 
   * Load and process h5 files
   * Preprocess data
   
-* modeling.ipynb
-  * Import software packages (pandas, matplotlib, matplotlib.dates, numpy) into python notebook
-  * Use combined_2010.csv to analyze economic data from the year 2010 to 2024
-  * Plot the change in quantity of real estate loans over time
-  * Plot the change in value of the financial metrics (mortgage rate, inflation rate, CPI percent change, real estate price change) over time
-  * Plot the change in value of the financial metrics (mortgage rate, inflation rate, and CPI percent change) over time
-  * Import VAR and adfuller from statsmodels.tsa.api
-  * Check stationarity for each variable
-  * Fit VAR model
-  * Determine optimal lag order
-  * Get the last observed values for forecasting
-  * Forecast for 10 years
-  * Convert forecast to DataFrame for easier handling
-  * Plot respective graphs for mortgage rate, inflation, CPI, RE prices with their 3-year moving averages (2010-2025)
-  * Plot the 3yr Averaged Financial Metrics over time
-  * Check stationarity for each variable
-  * Fit dataframe into VAR model and forecast for 10 years
+* modeling
+  * Build the CNN model
+  * Train and evaluate the model
+  * Load dataset metadata
+  * Data augmentation
+  * Build model, incorporate callbacks, and train batches
+  * Evaluate model, generate predictions, and create classification report and confusion matrix
+  * Train and evaluate on 32x32x3 images
+  * Train and evaluate on 64x64x3 images
+  * Train and evaluate on 384x384x3 images
 
 ## Authors
 
